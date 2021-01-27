@@ -4,9 +4,13 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
+<<<<<<< HEAD
     "start": "next start",
     "eslint:init": "eslint --init",
     "lint": "eslint ./ --fix"
+=======
+    "start": "next start"
+>>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
   },
   "dependencies": {
     "next": "latest",
@@ -16,6 +20,7 @@
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "babel-plugin-styled-components": "^1.8.0",
     "eslint": "^7.18.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -27,3 +32,9 @@
   "license": "MIT"
 }
  
+=======
+    "babel-plugin-styled-components": "^1.8.0"
+  },
+  "license": "MIT"
+}
+>>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc

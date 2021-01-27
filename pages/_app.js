@@ -1,7 +1,12 @@
+<<<<<<< HEAD
 import React from 'react';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import Head from 'next/head';
 import db from './db.json';
+=======
+import { createGlobalStyle, ThemeProvider } from 'styled-components'
+import db from '../pages/db.json';
+>>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -25,6 +30,7 @@ html, body {
   display: flex;
   flex-direction: column;
 }
+<<<<<<< HEAD
 `;
 
 const { theme } = db;
@@ -44,4 +50,25 @@ export default function App({ Component, pageProps }) {
       </ThemeProvider>
     </>
   );
+=======
+`
+
+/*const theme = {
+  colors: {
+    primary: '#0070f3',
+  },
+}*/
+
+const theme = db.theme;
+
+export default function App({ Component, pageProps }) {
+  return (
+    <>
+      <ThemeProvider theme={theme}>
+         <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  )
+>>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
 }
