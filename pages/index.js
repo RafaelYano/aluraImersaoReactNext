@@ -1,15 +1,16 @@
-<<<<<<< HEAD
 import styled from 'styled-components';
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import db from './db.json';
+import db from '../db.json';
 import Widget from '../src/components/Widget/index';
 import Footer from '../src/components/Footer/index';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
+import Input from '../src/components/input';
+import Button from '../src/components/Button';
 
 /* const Title = styled.h1`
   font-size: 50px;
@@ -22,45 +23,15 @@ import QuizBackground from '../src/components/QuizBackground';
 //} */
 
 /* const BackgroundImage = styled.div`
-=======
-import styled from 'styled-components'
-import db from '../pages/db.json'
-import Widget from '../src/components/Widget/index'
-import Footer from '../src/components/Footer/index'
-import GitHubCorner from '../src/components/GitHubCorner'
-import QuizBackground from '../src/components/QuizBackground'
-
-
-/*const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`*/
-
-//Trabalhando com react
-//function Title(props){ //propriedades/propriedades
-//  return <h1>{props.children}</h1>
-//}
-
-
-/*const BackgroundImage = styled.div` 
->>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
   background-image: url(${db.bg});
   flex: 1;
   background-size: cover;
   background-position: center;
-<<<<<<< HEAD
 `; */
 
 //  ` indica uma function
 
 export const QuizContainer = styled.div`
-=======
-`;*/
-
-//  ` indica uma function
-
- export const QuizContainer = styled.div`
->>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -71,7 +42,6 @@ export const QuizContainer = styled.div`
   }
 `;
 
-<<<<<<< HEAD
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
@@ -84,19 +54,10 @@ export default function Home() {
       <QuizContainer>
         <QuizLogo />
         <Widget>
-=======
-
-export default function Home() {
-  return( 
-  <QuizBackground backgroundImage={db.bg}>
-    <QuizContainer>
-        <Widget> 
->>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
           <Widget.Header>
             Quiz de RPG
           </Widget.Header>
           <Widget.Content>
-<<<<<<< HEAD
             <form onSubmit={function (infosDoEvento) {
               infosDoEvento.preventDefault();
               router.push(`/quiz?name=$(name)`);
@@ -104,24 +65,17 @@ export default function Home() {
               /* router manda para outra página */
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  /* State */
-                  /* name = infosDoEvento.target.value; */
-                  setName(infosDoEvento.target.value);
-                }}
+              <Input
+                name = "nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
                 placeholder="Seu nome aqui" 
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={name.length === 0}>
                 Vamos jogar {name}
-              </button>
+              </Button>
             </form>
           </Widget.Content>
-=======
-              <p> Outro texto aleatório </p>
-            </Widget.Content>
->>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
         </Widget>
         <Widget>
           <Widget.Content>
@@ -129,17 +83,9 @@ export default function Home() {
             <p>Um texto aleátorio e interessante</p>
           </Widget.Content>
         </Widget>
-<<<<<<< HEAD
         <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/RafaelYano" />
     </QuizBackground>
-=======
-      
-      <Footer />
-    </QuizContainer>
-    <GitHubCorner projectUrl="https://github.com/RafaelYano"/>
-  </QuizBackground>
->>>>>>> 993bad042a0e1e81b2e1dd12612f6fa43ff34dcc
   );
 }

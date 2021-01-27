@@ -1,0 +1,111 @@
+{
+  "bg": "https://segredosdomundo.r7.com/wp-content/uploads/2020/09/rpg-de-mesa-o-que-e-dicas-para-iniciantes-como-jogar-e-opcoes-online-1024x576.jpg",
+  "title": "Quiz CSS da Alura",
+  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "questions": [
+    {
+      "image": "https://4.bp.blogspot.com/-BaPF1iUziE8/Tz_ly79NHPI/AAAAAAAACUk/e1wZ8y2vASU/s1600/Drag%C3%A3o-Vermelho-Red+Dragon_wallpaper-09.jpg",
+      "title": "Em d&d e em alguns outros cenários quais são os dragões cromáticos?",
+      "description": "Melhor monstro de rpg? sim ou claro?",
+      "answer": 2,
+      "alternatives": [
+        "Púrpura, Negro, Amarelo, Branco e Azul",
+        "Vermelho, Púrpura, Negro, Branco e Verde",
+        "Negro, Azul, Vermelho, Verde e Branco",
+        "Amarelo, Verde, Vermelho, Branco e Azul"
+      ]
+    },
+    {
+      "image": "https://i.pinimg.com/originals/73/58/12/73581272c10c26e8531b0ca2c32cbcad.jpg",
+      "title": "Falando em dragões, quem é a divindade dos dragões cromáticos?",
+      "description": "Quem viu o desenho? já faz um tempinho né?",
+      "answer": 1,
+      "alternatives": [
+        "Bahamut",
+        "Tiamat",
+        "Ishtar",
+        "Tarrasque"
+      ]
+    },
+
+    {
+      "image": "https://www.reviewbox.com.br/wp-content/uploads/2019/10/dados-de-rpg.jpg",
+      "title": "Quais dos seguintes cenários de RPG usualmente não utiliza o sistema d20?",
+      "description": "Por que rolar um dado se podemos usar 10?",
+      "answer": 3,
+      "alternatives": [
+        "D&D",
+        "Starfinder",
+        "Tormenta",
+        "Mundo da Trevas"
+      ]
+    },
+
+    {
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61-s3%2BxDmmL._AC_SX425_.jpg",
+      "title": "Existem muitas variações de beholders, com cada olho tendo um poder, mas o a sua maior característica é o seu olho principal e o olho que ele manifesta, qual é este poder?",
+      "description": "Eu ouvi party kill?",
+      "answer": 2,
+      "alternatives": [
+        "Comando",
+        "Bola de fogo",
+        "Área anti magia",
+        "Petrificação"
+      ]
+    },
+
+    {
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/715283519088824218/76FE770EBC4F3F7C85EA48B4149AEEF6E094C08E/",
+      "title": " 'Magia pode ser dominada através de esforço e muito estudo', a qual classe essa frase mais se encaixa?",
+      "description": "Minha magia é sentar porrada",
+      "answer": 0,
+      "alternatives": [
+        "Mago",
+        "Bárbaro",
+        "Clérigo",
+        "Feiticeiro"
+      ]
+    },
+
+    {
+      "image": "https://steamusercontent-a.akamaihd.net/ugc/715283519088824218/76FE770EBC4F3F7C85EA48B4149AEEF6E094C08E/",
+      "title": " 'Você e seu grupo estão explorando uma masmorra no subterrânio, quando são emboscados por ....', qual dos inimigos abaixo é mais provável de ter feito a emboscada?",
+      "description": "Tem certeza que isso deveria estar aqui?",
+      "answer": 3,
+      "alternatives": [
+        "Grifo",
+        "Kraken",
+        "Wyvern",
+        "Beholder"
+      ]
+    },
+
+    {
+      "image": "https://i.pinimg.com/originals/42/21/0a/42210ad1acf4a8e8e8aaf92660891f3b.png",
+      "title": " 'Uma vez estávamos nos preparando para um combate em uma taverna, para acalmar os ânimos decidi contar uma piada, o grupo deu risada, o taverneiro deu risada, a mesa deu risada, matamos a mesa', Qual o monstro que estava na taverna?",
+      "description": "'1 na percepção', tem nada no baú, confia, abre aí bárbaro",
+      "answer": 0,
+      "alternatives": [
+        "Mímico",
+        "Licth",
+        "Doppelganger",
+        "Urso coruja"
+      ]
+    }
+
+  ],
+  "external": [
+    ""
+  ],
+  "theme": {
+      "colors":{
+          "primary": "#ff9800",
+          "secondary": "#d500f9",
+          "mainBg": "#1C1814",
+          "contrastText":"#FFFFFF",
+          "wrong":"#FF5722",
+          "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+  }
+}
