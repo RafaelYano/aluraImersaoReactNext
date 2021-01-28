@@ -71,7 +71,7 @@ export default function Home() {
                 placeholder="Seu nome aqui" 
                 value={name}
               />
-              <Button type="submit" disabled={name.length === 0}>
+              <Button type="submit" disabled={name.lsength === 0}>
                 Vamos jogar {name}
               </Button>
             </form>
@@ -80,12 +80,12 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <h1>RPG de mesa</h1>
-            <p>Um texto aleátorio e interessante</p>
+            <p>Um quiz para testar o seu conhecimento em rpg de mesa</p>
           </Widget.Content>
         </Widget>
         <Footer />
       </QuizContainer>
-      <GitHubCorner projectUrl="https://github.com/RafaelYano" />
+      <GitHubCorner projectUrl="https://github.com/RafaelYano/aluraImersaoReactNext" />
     </QuizBackground>
   );
 }

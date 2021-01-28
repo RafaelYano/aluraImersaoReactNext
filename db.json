@@ -19,12 +19,25 @@
       "image": "https://i.pinimg.com/originals/73/58/12/73581272c10c26e8531b0ca2c32cbcad.jpg",
       "title": "Falando em dragões, quem é a divindade dos dragões cromáticos?",
       "description": "Quem viu o desenho? já faz um tempinho né?",
-      "answer": 1,
+      "answer": 0,
       "alternatives": [
-        "Bahamut",
         "Tiamat",
         "Ishtar",
+        "Bahamut",
         "Tarrasque"
+      ]
+    },
+
+    {
+      "image": "data:image/jpeg;base64,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",
+      "title": "Qual destes não é um cenário de mundo das trevas?",
+      "description": "Vai uma intriga aí?",
+      "answer": 1,
+      "alternatives": [
+        "Mago: A Ascensão",
+        "Cthulhu: O Chamado",
+        "Lobisomem: O Apocalipse",
+        "Vampiro: A Máscara"
       ]
     },
 
@@ -43,7 +56,7 @@
 
     {
       "image": "https://images-na.ssl-images-amazon.com/images/I/61-s3%2BxDmmL._AC_SX425_.jpg",
-      "title": "Existem muitas variações de beholders, com cada olho tendo um poder, mas o a sua maior característica é o seu olho principal e o olho que ele manifesta, qual é este poder?",
+      "title": "Existem muitas variações de beholders, mas a sua maior característica é o seu olho principal, qual é o poder deste olho?",
       "description": "Eu ouvi party kill?",
       "answer": 2,
       "alternatives": [
@@ -56,7 +69,7 @@
 
     {
       "image": "https://steamusercontent-a.akamaihd.net/ugc/715283519088824218/76FE770EBC4F3F7C85EA48B4149AEEF6E094C08E/",
-      "title": " 'Magia pode ser dominada através de esforço e muito estudo', a qual classe essa frase mais se encaixa?",
+      "title": " 'Magia é dominada através de esforço e muito estudo', a qual classe essa frase mais se encaixa?",
       "description": "Minha magia é sentar porrada",
       "answer": 0,
       "alternatives": [
@@ -68,7 +81,7 @@
     },
 
     {
-      "image": "https://steamusercontent-a.akamaihd.net/ugc/715283519088824218/76FE770EBC4F3F7C85EA48B4149AEEF6E094C08E/",
+      "image": "https://s3.crackedcdn.com/phpimages/article/4/3/5/631435_v2.jpg",
       "title": " 'Você e seu grupo estão explorando uma masmorra no subterrânio, quando são emboscados por ....', qual dos inimigos abaixo é mais provável de ter feito a emboscada?",
       "description": "Tem certeza que isso deveria estar aqui?",
       "answer": 3,
@@ -82,8 +95,8 @@
 
     {
       "image": "https://i.pinimg.com/originals/42/21/0a/42210ad1acf4a8e8e8aaf92660891f3b.png",
-      "title": " 'Uma vez estávamos nos preparando para um combate em uma taverna, para acalmar os ânimos decidi contar uma piada, o grupo deu risada, o taverneiro deu risada, a mesa deu risada, matamos a mesa', Qual o monstro que estava na taverna?",
-      "description": "'1 na percepção', tem nada no baú, confia, abre aí bárbaro",
+      "title": "'Uma vez estávamos nos preparando para um combate em uma taverna, para acalmar os ânimos decidi contar uma piada, o grupo deu risada, o taverneiro deu risada, a mesa deu risada, matamos a mesa.', Qual o monstro que estava na taverna?",
+      "description": "'Ladino tira 1 no dado', o baú tá de boa, pode abrir bárbaro",
       "answer": 0,
       "alternatives": [
         "Mímico",
@@ -91,7 +104,22 @@
         "Doppelganger",
         "Urso coruja"
       ]
+    },
+
+    {
+      "image": "https://shadowpunkers.files.wordpress.com/2015/09/shadowrun_shadowpunkers_lobo_lancaster-1.png",
+      "title": " 'Quais conjuntos de cenários apresenta apenas a temática futurista?",
+      "description": "Não importa que exista arma a laser, todas as criaturas tem uma fraqueza a chumbo quente em alta velocidade",
+      "answer": 3,
+      "alternatives": [
+        "Starfinder, Pathfinder, Rogue Trader",
+        "Shadowrun, D&D, Tormenta20",
+        "D&D, Rogue Trader, Starfinder",
+        "Shadowrun, Rogue Trader, Starfinder"
+      ]
     }
+
+
 
   ],
   "external": [
@@ -103,8 +131,8 @@
           "secondary": "#d500f9",
           "mainBg": "#1C1814",
           "contrastText":"#FFFFFF",
-          "wrong":"#FF5722",
-          "success": "#4CAF50"
+          "wrong":"#d32f2f",
+          "success": "#81c784"
       },
       "borderRadius": "4px"
   }
