@@ -1,12 +1,12 @@
 import React from 'react';
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizLogo from '../src/components/QuizLogo';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativesForm'
-import { motion } from 'framer-motion';
+//import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizLogo from '../../components/QuizLogo';
+import QuizBackground from '../../components/QuizBackground';
+import QuizContainer from '../../..components/QuizContainer';
+import Button from '../../components/Button';
+import AlternativesForm from '../../components/AlternativesForm'
+import BackLinkArrow from '../../components/BackLinkArrow'
 
 function LoadingWidget() {
     return (
@@ -33,17 +33,7 @@ function LoadingWidget() {
 
   function ResultWidget({results}) {
     return (
-      <Widget
-      as= {motion.section}
-      trasnsition = {{delay: 0.8, duration: 0.8}}
-      variants ={{
-        show: {opacity: 1, x:'0'},
-        hidden: {opacity: 0, x:'100%'},
-
-      }}
-      initial ="hidden"
-      animate ="show"
-      >
+      <Widget>
         <Widget.Header>
           Resultado
         </Widget.Header>
@@ -67,8 +57,7 @@ function LoadingWidget() {
              ) )*/}
              Obrigado por fazer este quiz, lembre-se de passar nos outros quizzes desta imersão react da Alura de 2021
           </ul>
-        <img 
-          
+        <img
           alt="Descrição"
           style={{
             width: '100%',
@@ -76,7 +65,6 @@ function LoadingWidget() {
             objectFit: 'cover',
           }}
           src= {"https://64.media.tumblr.com/12a3b1e0f2c9cb9d093e46100dbf1c44/tumblr_mtd7bcXE201qkiyi1o1_400.gifv"}
-         
         />
         
         </Widget.Content>
@@ -99,7 +87,7 @@ function LoadingWidget() {
     return (
       <Widget>
         <Widget.Header>
-          {/* <BackLinkArrow href="/" /> */}
+          <BackLinkArrow href="/" />
           <h3>
             {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
           </h3>
@@ -161,10 +149,7 @@ function LoadingWidget() {
             {/* <pre>
               {JSON.stringify(question, null, 4)}
             </pre> */}
-            <Button type="submit" disabled={!hasAlternativeSelected}
-              as={motion.button}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}>
+            <Button type="submit" disabled={!hasAlternativeSelected}>
               Confirmar
             </Button>
             {/*isQuestionSubmited && isCorrect && <p>Correto</p>*/}
@@ -181,13 +166,14 @@ function LoadingWidget() {
     LOADING: 'LOADING',
     RESULT: 'RESULT',
   };
-  export default function QuizPage() {
+  export default function QuizPage({externalQuestions, externalBg}) {
     const [screenState, setScreenState] = React.useState(screenStates.LOADING);
-    const totalQuestions = db.questions.length;
+    const totalQuestions = externalQuestions.length;
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const questionIndex = currentQuestion;
-    const question = db.questions[questionIndex];
+    const question = externalQuestions[questionIndex];
     const [results, setResults] = React.useState([]);
+    const bg = externalBg;
 
     function addResult(result){
       setResults([
@@ -218,7 +204,7 @@ function LoadingWidget() {
     }
   
     return (
-      <QuizBackground backgroundImage={db.bg}>
+      <QuizBackground backgroundImage={bg}>
         <QuizContainer>
           <QuizLogo />
           {screenState === screenStates.QUIZ && (

@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import React, { useState } from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import { motion } from 'framer-motion';
 
 import db from '../db.json';
 import Widget from '../src/components/Widget/index';
@@ -49,11 +50,20 @@ export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>AluraQuiz - Modelo Base</title>
+        <title>AluraQuiz - RPG de mesa</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
-        <Widget>
+        <Widget as= {motion.section}
+          trasnsition = {{delay: 0, duration: 0}}
+          variants ={{
+            show: {opacity: 1, y:'0'},
+            hidden: {opacity: 0, y:'100%'},
+
+          }}
+          initial ="hidden"
+          animate ="show"
+          >
           <Widget.Header>
             Quiz de RPG
           </Widget.Header>
@@ -71,19 +81,55 @@ export default function Home() {
                 placeholder="Seu nome aqui" 
                 value={name}
               />
-              <Button type="submit" disabled={name.lsength === 0}>
+              <Button type="submit" disabled={name.lsength === 0}
+                as={motion.button}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                >
                 Vamos jogar {name}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
-        <Widget>
+        <Widget as= {motion.section}
+          trasnsition = {{delay: 0.5, duration: 0.5}}
+          variants ={{
+            show: {opacity: 1},
+            hidden: {opacity: 0},
+
+          }}
+          initial ="hidden"
+          animate ="show">
           <Widget.Content>
-            <h1>RPG de mesa</h1>
-            <p>Um quiz para testar o seu conhecimento em rpg de mesa</p>
+            <h1>Quizes da Galera</h1>
+            <ul>
+            {db.external.map((linkExterno) =>{
+              const [projectName, githubUser] = linkExterno
+                .replace(/\//g, '')
+                .replace('https:','')
+                .replace('.vercel.app', '')
+                .split('.');
+
+              return( 
+                <li key={linkExterno}>
+                  <Widget.Topic href={linkExterno}>
+                    {`${githubUser}/${projectName}`}
+                  </Widget.Topic>
+                </li>
+              );
+            })}
+            </ul>
           </Widget.Content>
         </Widget>
-        <Footer />
+        <Footer as= {motion.section}
+          trasnsition = {{delay: 0.8, duration: 0.8}}
+          variants ={{
+            show: {opacity: 1, x:'0'},
+            hidden: {opacity: 0, x:'100%'},
+
+          }}
+          initial ="hidden"
+          animate ="show" />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/RafaelYano/aluraImersaoReactNext" />
     </QuizBackground>
